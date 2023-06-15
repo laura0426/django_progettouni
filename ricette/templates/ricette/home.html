@@ -25,6 +25,16 @@
     <p> Senza di questo è possibile solamente consulatre le ricette già presenti. </p>
 
 <br>
+
+{% if messages %}
+<ul class="messages">
+        {% for message in messages %}
+            <li{% if message.tags %} class="{{ message.tags }}"{% endif %}>{{ message }}</li>
+        {% endfor %}
+    </ul>
+{% endif %}
+
+<br>
 <br>
 <br>
 

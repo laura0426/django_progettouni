@@ -1,3 +1,4 @@
+from django.contrib import messages
 from django.contrib.auth.forms import UserCreationForm, AuthenticationForm
 from django.shortcuts import render, redirect
 from django.contrib.auth import login, authenticate, logout
@@ -78,6 +79,9 @@ def lista_ricette(request):
 @login_required(login_url='/login/')
 def preferiti(request):
     preferiti = Preferiti.objects.get(user=request.user)
+    if preferiti.lista.count()==0:
+        messages.info(request, "Non hai ancora aggiunto ricette ai preferiti")
+        return redirect('home')
     return render(request, 'ricette/preferiti.html', {'preferiti': preferiti})
 
 @login_required(login_url='/login/')
