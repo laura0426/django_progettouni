@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{ ricetta.nome }}</title>
+</head>
+<body>
+    <p>Categoria:{{ ricetta.categoria }}</p>
+    <p>Difficoltà:{{ ricetta.difficolta }}</p>
+    <p>Ingredienti:{{ ricetta.ingredienti }}</p>
+    <p>Procedimento:{{ ricetta.procedimento }}</p>
+<form action="{% url 'aggiungi_preferiti' ricetta.id %}" method="post">
+    {% csrf_token %}
+    <button type="submit"> Aggiungi ai preferiti </button></form>
+
+<form action="{% url 'lista_ricette'%}" method="post">
+    {% csrf_token %}
+    <button type="submit"> Torna alla Lista Ricette </button></form>
+</body>
+</html>

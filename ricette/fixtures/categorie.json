@@ -1,0 +1,14 @@
+[
+  {
+    "model": "ricette.categoria",
+    "fields": {
+      "nome": "categoria 1"
+    }
+  },
+  {
+    "model": "ricette.categoria",
+    "fields": {
+      "nome": "categoria 2"
+    }
+  }
+]

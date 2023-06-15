@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title> Ricette Preferite </title>
+</head>
+<body>
+  <h1> Ricette Preferite </h1>
+
+  {% if preferiti.lista.all %}
+    <ul>
+      {% for ricetta in preferiti.lista.all %}
+        <li>
+          <a href="{% url 'ricette' ricetta.id %}">{{ ricetta.nome }}</a>
+          <form action="{% url 'rimuovi_preferiti' ricetta.id %}" method="POST" style="display: inline;">
+            {% csrf_token %}
+            <button type="submit"> Rimuovi da preferiti </button>
+          </form>
+        </li>
+      {% endfor %}
+    </ul>
+  {% else %}
+    <p> Nessuna ricetta trovata </p>
+  {% endif %}
+    <a href="{% url 'lista_ricette' %}"> Torna alla lista delle ricette </a>
+
+</body>
+</html>

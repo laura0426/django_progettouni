@@ -1,0 +1,35 @@
+[
+  {
+    "model": "ricette.ricette",
+    "fields": {
+      "nome": "Pasta al pomodoro",
+      "ingredienti": "ingredienti Pasta al pomodoro",
+      "procedimento": "procedimento Pasta al pomodoro",
+      "tempo": "tempo Pasta al pomodoro",
+      "difficolta": "difficolta Pasta al pomodoro",
+      "categoria": "categoria 1"
+    }
+  },
+  {
+    "model": "ricette.ricette",
+    "fields": {
+      "nome": "Insalata di polpo",
+      "ingredienti": "ingredienti Insalata di polpo",
+      "procedimento": "procedimento Insalata di polpo",
+      "tempo": "tempo Insalata di polpo",
+      "difficolta": "difficolta Insalata di polpo",
+      "categoria": "categoria 1"
+    }
+  },
+  {
+    "model": "ricette.ricette",
+    "fields": {
+      "nome": "Tacos",
+      "ingredienti": "ingredienti Tacos",
+      "procedimento": "procedimento Tacos",
+      "tempo": "tempo Tacos",
+      "difficolta": "difficolta Tacos",
+      "categoria": "categoria 2"
+    }
+  }
+]

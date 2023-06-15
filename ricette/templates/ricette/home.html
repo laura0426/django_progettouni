@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <p>
+    <meta charset="UTF-8">
+    <title>Lista Ricette</title>
+   <script src="../../../log.js"></script>
+    <link rel="stylesheet" href="../../../style.css">
+    <h1> Home Page </h1>
+
+
+         <form id="menu_form_id" action="/lista_ricette" method="GET">
+        <select name="categoria">
+            <option value="" selected="selected"> Seleziona una categoria </option>
+            {% for categoria in categorie %}
+                <option value="{{ categoria.nome }}">{{ categoria.nome }}</option>
+            {% endfor %}
+        </select>
+        <button type="submit"> Conferma </button>
+         </form>
+
+
+ <p> Per poter inserire nuove ricette è necessario fare accesso o registrarsi nel sito </p>
+    <p> Senza di questo è possibile solamente consulatre le ricette già presenti. </p>
+
+<br>
+<br>
+<br>
+
+    <form action='register'>
+  <p> <button type="submit">
+    Registrati
+  </button>
+</form>
+</p>
+
+        <form action='login'>
+    <p> <button type="submit">
+        Login
+    </button> </p> </form>
+
+<form action='logout'>
+        <p> <button type="submit">
+            Logout
+        </button> </p> </form>
+
+<br>
+
+    <form action='crea_ricetta'>
+        <p> <button type="submit">
+            Inserisci Ricetta
+        </button> </p> </form>
+
+
+<form action='preferiti'>
+        <p> <button type="submit">
+            Preferiti
+        </button> </p>
+</form>
+
+
+<form action="idee_ricette">
+    <p> <button type="submit">
+        Idee Ricette
+    </button> </p>
+</form>
+
+
+
+
+
+
+
+</body>
+</head>
+</html>

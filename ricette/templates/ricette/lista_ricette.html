@@ -1,0 +1,32 @@
+<!-- templates/ricette/lista_ricette.html -->
+
+<h1>{{ categoria_selezionata }}</h1>
+
+<!-- Form per filtrare le ricette per categoria -->
+<form method="GET" action="{% url 'lista_ricette' %}">
+  <label for="categoria">Seleziona una categoria:</label>
+  <select name="categoria" id="categoria">
+    <option value="">Tutte le categorie</option>
+    {% for categoria in categorie %}
+      <option value="{{ categoria.nome }}" {% if categoria.nome == categoria_selezionata %}selected{% endif %}>{{ categoria.nome }}</option>
+    {% endfor %}
+  </select>
+  <button type="submit">Filtra</button>
+</form>
+
+<a href="{% url 'home' %}">Torna alla home</a>
+
+<!-- Lista delle ricette -->
+{% if ricette %}
+  <ul>
+    {% for ricetta in ricette %}
+      <li>
+          <a href="{% url 'ricette' ricetta.id %}">{{ ricetta.nome }}</a>
+      </li>
+    {% endfor %}
+  </ul>
+{% else %}
+  <p>Nessuna ricetta trovata.</p>
+{% endif %}
+
+

@@ -1,0 +1,9 @@
+<!-- templates/ricette/crea_ricetta.html -->
+
+<h1>Crea una nuova ricetta</h1>
+
+<form method="POST">
+  {% csrf_token %}
+  {{ form.as_p }}
+  <button type="submit">Crea ricetta</button>
+</form>

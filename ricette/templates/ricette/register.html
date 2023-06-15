@@ -1,0 +1,9 @@
+<!-- templates/ricette/register.html -->
+
+<h1>Registrazione</h1>
+
+<form method="POST">
+  {% csrf_token %}
+  {{ form.as_p }}
+  <button type="submit">Registrati</button>
+</form>

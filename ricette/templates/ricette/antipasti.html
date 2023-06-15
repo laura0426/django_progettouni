@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}
+
+<head>
+    <body style="background-color: red">
+    <meta charset="UTF-8">
+    <title> Antipasti </title>
+    <h1> Pizzette </h1>
+    <img src="{% static 'immagini/Pizzette.jpg' %}" alt="Pizzette" width="300" height="200">
+    <p> Questa ricetta è semplice e veloce (10 minuti di preparazione e 15 minuti di cottura), ma allo stesso tempo gustosa </p>
+    <p> Di seguito indicherò i vari ingredienti e procedura </p>
+    <br>
+    <h2> INGREDIENTI </h2>
+ <ul>
+     <li> 1 vasetto di yogurt greco da 170 g </li>
+     <li>1 vasetto di farina tipo 00 </li>
+     <li> 3 g di lievito istantaneo per torte salate </li>
+     <li> ½ cucchiaino di sale </li>
+     <li> 250 g di passata di pomodoro </li>
+     <li> 200 g di stracchino </li>
+     <li> 150 g di mozzarella fior di latte </li>
+     <li> olio extravergine di oliva </li>
+     <li> origano </li>
+ </ul>
+<br>
+     <h2> PROCEDURA </h2>
+     <ul>
+     <li>Realizzare queste pizzette pronte in meno di 30 minuti è davvero facile e veloce. Per prima cosa raccogliete la farina, il lievito e il sale in una ciotola. Aggiungete lo yogurt e impastate velocemente: il risultato sarà un panetto più o meno omogeneo. Stendetelo con il matterello su un piano di lavoro infarinato fino a ottenere una sfoglia spessa circa ½ cm. Utilizzando un coppapasta da 6-8 cm di diametro ricavate dei dischetti e posizionateli man mano su una leccarda rivestita di carta forno.  </li>
+    <li>Lasciate da parte mentre impostate gli ingredienti per la farcitura: versate la passata di pomodoro in un piatto e conditela con sale e olio; tritate grossolanamente la mozzarella. Condite ogni pizzetta con la passata di pomodoro e l'origano e guarnitene quattro con lo stracchino, quattro con la mozzarella. Ripassatele tutte con un pizzico di origano e completate con un filo di olio a crudo. </li>
+    <li> Cuocete le pizzette in forno statico preriscaldato a 200°C per circa 15 minuti, monitorando il livello di doratura. Sfornate e servite le pizzette pronte in meno di 30 minuti.</li>
+ </ul>
+
+
+    <form action="{{ request.META.HTTP_REFERER }}">
+    <p> <button type="submit">
+        Torna alla lista idee ricette
+    </button></p>
+</form>
+
+
+</head>
+
+</body>
+</html>

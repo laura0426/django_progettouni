@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}
+
+<head>
+    <body style="background-color: darkorchid">
+    <meta charset="UTF-8">
+    <title> Intolleranti </title>
+<h1> TACOS CON POLLO E AVOCADO </h1>
+<img src="{% static 'immagini/tacos.jpeg' %}" alt="tacos" width="400" height="300">
+  <p> Questa ricetta è stata pensata proprio per chi soffre di celiachia e per chi ha una leggera intolleranza al glutine </p>
+  <p> La ricetta richiede 1h per la preparazione e per la cottura </p>
+  <h2> INGREDIENTI </h2>
+<ul>
+<li> 400 g petto di pollo </li>
+<li> 8 tacos </li>
+<li> 1 avocado </li>
+<li> 4 cucchiai di maionese </li>
+<li> 1 ciuffo di coriandolo </li>
+<li> sale q.b. </li>
+<li> pepe q.b. </li>
+</ul>
+<br>
+<h2> PROCEDURA </h2>
+ <ul>
+ <li> Lessate il pollo in acqua poco salata, poi lasciatelo intiepidire. Successivamente riducetelo a pezzettini e poi a listarelle irregolari  </li>
+<li> Mescolate il pollo con la maionese e con il coriandolo tritato. Infine salate e pepate. </li>
+<li> Intanto sbucciate l'avocado e fatelo a fettine. </li>
+<li> Infine, farcite i tacos con il pollo, la maionese e avocado. </li>
+ </ul>
+
+    <form action="{{ request.META.HTTP_REFERER }}">
+    <p> <button type="submit">
+        Torna alla lista idee ricette
+    </button></p>
+</form>
+
+    </head>
+</body>
+</html>

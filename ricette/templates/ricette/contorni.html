@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}
+
+<head>
+    <body style="background-color: darkorange">
+    <meta charset="UTF-8">
+    <title> Contorni </title>
+    <h1> ZUCCHINE ALLE ERBE </h1>
+    <img src="{% static 'immagini/zucchine.jpg' %}" alt="zucchine alle erbe" width="300" height="200">
+    <p> Questa ricette richiede 30 minuti di preparazione e 20 minuti di cottura </p>
+    <h2> INGREDIENTI </h2>
+    <ul>
+     <li> 4 zucchine scure </li>
+     <li> 4 cucchiai di olio extravergine d'oliva </li>
+     <li> salvia essiccata q.b. </li>
+     <li> alloro q.b. </li>
+     <li> maggiorana q.b. </li>
+     <li> rosmarino q.b. </li>
+     <li> timo q.b. </li>
+     <li> pepe </li>
+     <li> sale q.b. </li>
+     <li> limone q.b. </li>
+     <li> parmigiano </li>
+    </ul>
+    <br>
+    <h2> PROCEDURA </h2>
+    <ul>
+    <li> Preriscaldate il forno a 180 °C e foderate una teglia con della carta da forno, ungendola leggermente. Tagliate le zucchine in 4 parti, nel senso della lunghezza, eliminando le punte: se la parte interna presenta molti semini, eliminateli con un coltello adatto.</li>
+    <li> Mettete su un tagliere le erbe e tritatele il più possibile: se sono molto secche potete usare la lama del coltello in orizzontale, per frantumarle. Mescolatele in una ciotola insieme al pepe, un po' di parmigiano grattugiato e a un goccio di olio, mescolando bene. </li>
+    <li> Mettete le zucchine in una ciotola e conditele con un filo di olio e un pizzico di sale: poi aggiungete 2 cucchiaini del mix di erbe 3, mescolando bene. </li>
+    <li> Mettete le zucchine sulla teglia e distribuite il resto delle erbe; condite con un altro giro di olio. </li>
+    <li> Mettete le zucchine in forno per 12-15 minuti o finché risultano tenere; </li>
+    <li> Sfornare le zucchine, guarnitele con fettine di limone e servire subito. </li>
+    </ul>
+
+    <form action="{{ request.META.HTTP_REFERER }}">
+    <p> <button type="submit">
+        Torna alla lista idee ricette
+    </button></p>
+</form>
+
+
+
+
+
+
+    
+</head>
+
+</body>
+</html>
